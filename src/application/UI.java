@@ -1,8 +1,14 @@
 package application;
 
 import chess.ChessPiece;
+import chess.Color;
 
 public class UI {
+
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_WHITE = "\u001B[37m";
+
 
     public static void printBoard(ChessPiece[][] pieces) {
         for (int i=0; i<pieces.length; i++) {
@@ -20,7 +26,12 @@ public class UI {
             System.out.print(" - ");
         }
         else {
-            System.out.print(piece);
+            if (piece.getColor() == Color.WHITE) {
+                System.out.print(ANSI_WHITE + piece + ANSI_RESET);
+            }
+            else {
+                System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
+            }
         }
         System.out.print(" ");
     }
