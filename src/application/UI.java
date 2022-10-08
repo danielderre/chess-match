@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class UI {
 
@@ -17,7 +16,7 @@ public class UI {
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
-    public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+    public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
 
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
@@ -69,7 +68,7 @@ public class UI {
 
     private static void printPiece(ChessPiece piece, boolean background) {
         if (background){
-            System.out.print(ANSI_GREEN_BACKGROUND);
+            System.out.print(ANSI_BLUE_BACKGROUND);
         }
         if (piece == null) {
             System.out.print(" - " + ANSI_RESET);
