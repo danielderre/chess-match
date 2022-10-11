@@ -1,4 +1,4 @@
-<h1 align="center">Chess</h1>
+<h1 align="center">Chess-match</h1>
 
 <p align="center">
 <img alt="Github top language" src="https://img.shields.io/github/languages/top/danielderre/chess-match?color=56BEB8">
@@ -29,7 +29,7 @@ Status: Complete 🚀
 
 ## :dart: About ##
 
-A simple chess game system built utilizing Java.
+A simple chess game system built in Java.
 
 
 ## :rocket: Technologies ##
